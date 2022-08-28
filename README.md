@@ -9,7 +9,7 @@ The result of my experiment can be resumed in these metrics:
 - The time spent looking for information on how to do something was about 7 hours
 - The time spent looking how to do something in react was about 2 hours. Yep, even finding ways to do something in CSS was more a problem than my supposed lack of experience in React JS 16.8++.
 
-Conclusion: as almost everything in the Software industry, recruitment processes suck badly and are nonsense credited by ignorants who pretend to be good programmers.
+Conclusion: as almost everything in the Software industry, recruitment processes suck badly and are just nonsense.
 
 ## Project specifications
 
