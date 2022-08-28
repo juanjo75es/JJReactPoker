@@ -1,38 +1,464 @@
 .App {
   text-align: center;
+  position:fixed;
+  left: 0px;  
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Board {
+  position:fixed;
+  left: 5%;  
+  right: 0%;
+  top: 5%;
+  bottom: 0px;
+  background-size: 80%;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Deck {
+  position: absolute;
+  right:30%;
+  top:30%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Pot {
+  position: absolute;
+  left: 35%;
+  top:45%;
+  color: #cddc39;
+  font-size: large;
+  font-weight: 900;
+}
+
+.cartas{
+  position:absolute;
+}
+
+.carta{
+  position: relative;
+  display: inline-block;
+  width:70px;
+  height:100px;
+  margin-right: -35%;
+}
+
+.Hand .carta{
+  margin-right: 5px;
+}
+
+.reverso{
+  position: relative;
+  display: inline-block;
+  width:70px;
+  height:100px;
+  margin-right: -35%;
+}
+
+.reversodeck{
+  margin-right: -67px;
+}
+
+.jugador{
+  position:absolute;  
+}
+
+.Hand{
+  position: absolute;
+  left:27%;
+  top:30%;
+  
+}
+
+.jugador4{
+  left:50%;
+  top:10%;
+}
+
+.jugador1{
+  left:50%;
+  top: 55%;
+}
+
+.jugador3{
+  left:14%;
+  top:10%
+}
+
+.jugador2{
+  left:14%;
+  top: 55%;
+}
+
+.css-border {
+  position: relative;
+  
+  border: 4px solid #cddc39;
+  padding: 2px;
+  border-radius: 50%;
+  border-top-color: #ff5722;
+  border-left-color: #ff5722;
+  width: 95px;
+  height: 95px;
+}
+
+.card {
+  position:relative;
+  
+  left:120px;
+  color:beige;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.jugador1 .card,
+.jugador2 .card
+{
+  top:90px;
+}
+
+.jugador3 .card,
+.jugador2 .card
+{
+  left:-100px;
+}
+
+.jugador1 .card,
+.jugador4 .card
+{
+  left: 140px;
+}
+
+.jugador3 .card,
+.jugador4 .card
+{
+  top: -120px;
+}
+
+.card .title {
+  color: grey;
+  font-size: 12px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
   color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  border: 1px solid #ff5722;
+  border-radius: 6px;
+  max-width: 350px;
+  text-align: center;
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.226);
+  color: #e5e7e8;  
+}
+.card_img {
+  width: 120px;
+  
+  overflow: hidden;
+  margin: -60px auto 0;
+}
+.card_img img {
+  object-fit: cover;
+}
+.card_info {
+  padding-bottom: 20px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dealer-button{
+  position:absolute;
+  width:45px;
+  top:140px;
+  left:120px;
+}
+
+.jugador1 .dealer-button,
+.jugador2 .dealer-button
+{
+  top:-70px;
+}
+
+.jugador2 .dealer-button,
+.jugador3 .dealer-button
+{
+  left:0px;
+}
+
+.dealer{
+  position: absolute;
+  left:80%;
+  top:20%;
+  width: 220px;
+  border: 4px solid #cddc39;
+  padding: 2px;
+  border-radius: 50%;
+  border-top-color: #ff5722;
+  border-left-color: #ff5722;
+  
+}
+
+.table{
+  position:absolute;
+  width:80%;
+  height: 80%;
+  left:0px;
+}
+
+.bet{
+  position: absolute;  
+  color:#ff5722;
+  font-size: large;
+  font-weight: 900;
+  left: 0px;
+  top:-70px;
+  animation-name: bet-anim;
+  animation-duration: 1s;
+}
+
+.jugador3 .bet,
+.jugador4 .bet{
+  top: 100px;
+}
+
+.jugador2 .bet,
+.jugador3 .bet{
+  left: 120px;
+}
+
+.jugador1 .bet,
+.jugador4 .bet{
+  left: 0px;
+}
+
+
+
+.winning-hand{
+  position: absolute;
+  min-width: 450px;
+  top: 100px;
+  left: 70px;
+}
+
+.jugador1 .winning-hand,
+.jugador2 .winning-hand{
+  top: 50px;
+  left:85px;
+}
+
+.jugador3 .winning-hand,
+.jugador4 .winning-hand{
+  top: 10px;
+}
+
+.jugador2 .winning-hand,
+.jugador3 .winning-hand{
+  left: -410px;
+}
+
+.winning-hand .carta{
+  margin-right: -30px;
+  width: 60px;
+  height: 85px;
+  animation-name: carta-anim;
+  animation-duration: 1s;
+}
+
+
+.winner{
+  position: absolute;  
+  color: #cddc39;
+  font-size: large;
+  font-weight: 900;
+  left: 130px;
+  top: 10px;
+  animation-name: reward;
+  animation-duration: 1s;
+}
+
+
+@keyframes reward {
+  from {font-size:50px;}
+  to {font-size:20px;}
+}
+
+@keyframes bet-anim {
+  from {font-size:5px;}
+  to {font-size:20px;}
+}
+
+@keyframes carta-anim {
+  from {width:80px;height:120px;}
+  to {width:60px;height:85px;}
+}
+
+.chip{
+  position: relative;
+  top:8px;
+  width: 32px;
+}
+
+.Panel{
+  position: fixed;
+  text-align: left;
+  right: 20px;
+  bottom: 20px;
+  width: 20%;
+  height: 25%;
+}
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	font-weight:bold;
+	padding:13px 19px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+  min-width: 120px;
+  margin: 5px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+input[type=range] {
+  width: 100%;
+  margin: 12.3px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 1.3px;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -12.5px;
+  width: 16px;
+  height: 33px;
+  background: #d5ffff;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+input[type=range]::-moz-range-track {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 1.3px;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+}
+input[type=range]::-moz-range-thumb {
+  width: 16px;
+  height: 33px;
+  background: #d5ffff;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 13.3px 0;
+  color: transparent;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+}
+input[type=range]::-ms-thumb {
+  width: 16px;
+  height: 33px;
+  background: #d5ffff;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align:auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  input[type=range] {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.eliminated_player{
+  visibility: hidden;
+}
+
+.overlayDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:99;
+  background-color: #000;
+  font-size: 30px;
+  color: #cddc39;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
