@@ -18,6 +18,7 @@ The AI is just 99% random logic but the result is playable and in my opinion the
 
 ![image](https://user-images.githubusercontent.com/6480846/187090622-62d9f4cc-29a0-4b2a-b9e0-c439bb5cb272.png)
 
+[Live demo](http://tests.oficloud.com/jjpoker/index.html)
 
 The game logic is almost the same as in any Holdem Texas game but some small details have been simplified as the goal was just to test my ability to develop a Poker interface and not so much developing the logic. Anyway I think it could be a quite solid base for developing a more advanced version of a poker game.
 
