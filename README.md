@@ -1,7 +1,7 @@
 # JJReactPoker
 
 Poker single-player game developed in React JS (with hooks). I dveloped this project just to test my ability with React Hooks. It is my first project with this ... technology (?) and the goal was to see how much of the time spent on the project was for normal development tasks and how much for solving doubts about how React Hooks work.
-As background information, I recently passed many basic React JS tests (the first one gave me a certificate in just 3 minutes) but failed to pass a quite exigent React JS 16.8++ test. As a consequence I am blocked for three months to aspire to jobs using this technology in a freelancers platform.
+As background information, I recently passed many basic React JS tests (the first one gave me a certificate in just 3 minutes) but failed to pass a quite exigent React JS 16.8++ test. 
 
 The result of my experiment can be resumed in these metrics:
 
@@ -9,16 +9,19 @@ The result of my experiment can be resumed in these metrics:
 - The time spent looking for information on how to do something was about 7 hours
 - The time spent looking how to do something in react was about 2 hours. Yep, even finding ways to do something in CSS was more a problem than my supposed lack of experience in React JS 16.8++.
 
-Conclusion: as almost everything in the Software industry, recruitment processes suck badly and are just nonsense.
+Conclusions: Conclusions are quite evident.
 
 ## Project specifications
 
 A single-player Poker game. Just play against three automated opponents and try to get all their money. If you do, you win.
 The AI is just 99% random logic but the result is playable and in my opinion the playing experience is not much different from playing online against unexperienced players. I intend to improve the AI in future versions.
 
+[Live demo](http://tests.oficloud.com/jjpoker/index.html)
+
+See here a [copy of this projet using Typescript](https://github.com/juanjo75es/JJTSReactPoker).
+
 ![image](https://user-images.githubusercontent.com/6480846/187090622-62d9f4cc-29a0-4b2a-b9e0-c439bb5cb272.png)
 
-[Live demo](http://tests.oficloud.com/jjpoker/index.html)
 
 The game logic is almost the same as in any Holdem Texas game but some small details have been simplified as the goal was just to test my ability to develop a Poker interface and not so much developing the logic. Anyway I think it could be a quite solid base for developing a more advanced version of a poker game.
 
