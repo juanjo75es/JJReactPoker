@@ -20,8 +20,7 @@ The AI is just 99% random logic but the result is playable and in my opinion the
 
 See here a [copy of this projet using Typescript](https://github.com/juanjo75es/JJTSReactPoker).
 
-![image](https://user-images.githubusercontent.com/6480846/187090622-62d9f4cc-29a0-4b2a-b9e0-c439bb5cb272.png)
-
+![poker1](https://user-images.githubusercontent.com/6480846/187438475-d8e643fe-2975-46ba-95b6-d6fc4118546a.png)
 
 The game logic is almost the same as in any Holdem Texas game but some small details have been simplified as the goal was just to test my ability to develop a Poker interface and not so much developing the logic. Anyway I think it could be a quite solid base for developing a more advanced version of a poker game.
 
