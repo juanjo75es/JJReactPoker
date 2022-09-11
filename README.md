@@ -19,7 +19,9 @@ The AI is just 99% random logic but the result is playable and in my opinion the
 [Live demo](http://tests.oficloud.com/jjpoker/index.html)
 
 See here a [copy of this projet using Typescript](https://github.com/juanjo75es/JJTSReactPoker).
+
 See here a [copy of this projet using Vue.JS](https://github.com/juanjo75es/VueJSPoker).
+
 See here a [copy of this projet using Vanilla JavaScript](https://github.com/juanjo75es/TypescriptPoker).
 
 ![poker1](https://user-images.githubusercontent.com/6480846/187438475-d8e643fe-2975-46ba-95b6-d6fc4118546a.png)
